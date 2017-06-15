@@ -16,7 +16,7 @@ public class AlignmentFileStats {
        
     public void legacyActions(AlignmentsTableFile nonAlignedSummaryFile, ReadSetStats overallStats) {
         if (nAlignments == 0) {
-            String leafName = new File(alignmentPathname).getName();
+            String leafName = new File(alignmentPathname).getName();   
             nonAlignedSummaryFile.writeNoAlignmentMessage(leafName);
             overallStats.addReadWithoutAlignment();
         }
